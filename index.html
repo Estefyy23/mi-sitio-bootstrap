@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estafany</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/django.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center my-4">
+    <h1>Bienvenido a Mi Sitio</h1>
+  </header>
+
+  <!-- Sección de Servicios -->
+  <section class="container my-5 bg-info" id="servicios">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    <div class="row text-center">
+      <!-- Curso 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow rounded">
+          <img src="assets/img/img1.jpeg" class="card-img-top img-fluid" alt="Python Django">
+          <div class="card-body">
+            <h3 class="card-title">Descubre la magia de Latacunga</h3>
+            <p class="card-text">Vista panorámica del centro histórico de Latacunga,
+               con la iglesia matriz al fondo y el colorido letrero de "LATACUNGA" 
+              en primer plano, en una plaza empedrada y cielo parcialmente nublado. </p>
+            <a href="#" class="btn btn-primary">Conocer mas ❤️</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow rounded">
+          <img src="assets/img/img2.jpg" class="card-img-top img-fluid" alt="JavaScript">
+          <div class="card-body">
+            <h3 class="card-title">Laguna de la Quilotoa</h3>
+            <p class="card-text">Paisaje natural de la Laguna de Quilotoa, una caldera volcánica con agua color turquesa. 
+              En primer plano, una persona sentada con chaqueta roja observa el paisaje desde una colina cubierta de pasto.</p>
+            <a href="#" class="btn btn-primary">Conocer mas💖</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow rounded">
+          <img src="assets/img/img3.jpg" class="card-img-top img-fluid" alt="Java">
+          <div class="card-body">
+            <h3 class="card-title">El Panecillo</h3>
+            <p class="card-text"> Imagen aérea del monumento de la Virgen de El Panecillo en Quito, 
+              con la ciudad extendiéndose al fondo bajo un cielo azul y despejado. 
+              Se aprecia la carretera curva que rodea el cerro.</p>
+            <a href="#" class="btn btn-primary">Conocer mas❤️</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collapse -->
+  <div class="container mb-5">
+    <p><a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#infoExtra">Más información</a></p>
+    <div class="collapse" id="infoExtra">
+      <div class="card card-body">
+        Todos nuestros cursos incluyen certificación, acceso de por vida y soporte personalizado.
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <section class="text-center bg-secondary text-white py-5" id="contacto">
+    <h2 class="mb-4">Contáctanos</h2>
+    <form class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="mb-3 text-start">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3 text-start">
+            <label for="comentarios" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="comentarios" rows="3"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-light">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="text-center bg-dark text-white py-3 mt-5">
+    <p>© 2025 Mi Sitio. Todos los derechos reservados. Estefany Toala</p>
+    <a href="#" class="text-white">Términos</a> | <a href="#" class="text-white">Privacidad</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
